@@ -25,11 +25,12 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Archive: "https://s-ong-c.github.io/tags/"
+  Categories: "https://s-ong-c.github.io/tags/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
     - GitHub Pages: "https://github.com/s-ong-c"
-  Author's home: "http://deanattali.com"
+  #Author's home: "http://deanattali.com"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
@@ -65,7 +66,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Some Person
+  name: MINSEOKSONG
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
@@ -75,7 +76,7 @@ social-network-links:
   rss: true
   email: "somony9292@gmail.com"
   facebook: daattali
-  github: "https://github.com/s-ong-c"
+  github: s-ong-c
   instagram: s.ong.c
 #  reddit: yourname
 #  google-plus: +DeanAttali
