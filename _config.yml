@@ -17,7 +17,7 @@ baseurl: ""
 title: sOngC Tech BLOG
 
 # Short description of your site
-description: A virtual proof that name is awesome!
+description: songc TECH BLOG & PORTFOLIO
 
 # --- Navigation bar options --- #
 
@@ -25,7 +25,7 @@ description: A virtual proof that name is awesome!
 navbar-links:
   About Me: "aboutme"
   Archive: "https://s-ong-c.github.io/tags/"
-  Categories: "https://s-ong-c.github.io/tags/"
+  Categories: "https://s-ong-c.github.io/categories/"
   Resources:
     - Beautiful Jekyll: "http://deanattali.com/beautiful-jekyll/"
     - Learn markdown: "http://www.markdowntutorial.com/"
