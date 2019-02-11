@@ -1,76 +1,146 @@
----
-layout: base
----
+<!DOCTYPE html>
+<html>
+{% include post-head.html %}
+<body>
+    <!--[if lt IE 10]>
+<div class="alert-danger" role="alert">你的浏览器实在太太太旧了，放学别走，升级完浏览器再说！<a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div>
+<![endif]-->
+ <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
-{% include header.html type="post" %}
+{% include header.html %}
 
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-      {% if page.gh-repo %}
-        {% assign gh_split =  page.gh-repo | split:'/'  %}
-        {% assign gh_user =  gh_split[0]  %}
-        {% assign gh_repo =  gh_split[1]  %}
-
-        <div id="header-gh-btns">
-          {% if page.gh-badge.size > 0 %}
-            {% for badge in page.gh-badge %}
-              {% case badge %}
-                {% when 'star'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'watch'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=watch&v=2&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'fork'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&repo={{ gh_repo }}&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-                {% when 'follow'%}
-                  <iframe src="https://ghbtns.com/github-btn.html?user={{ gh_user }}&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
-              {% endcase %}
+<header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
+    <div class="post-wrapper">
+        <div class="post-tags">
+            {% if page.tags.size > 0 %}
+            {% for tag in page.tags  %}
+            <a href="/tags#{{ tag }}" class="post-tag">{{ tag }}</a>
             {% endfor %}
-          {% endif %}
+            {% endif %}
         </div>
-      {% endif %}
-
-      <article role="main" class="blog-post">
-        {{ content }}
-      </article>
-
-      {% if page.tags.size > 0 %}
-        <div class="blog-tags">
-          Tags:
-          {% if site.link-tags %}
-          {% for tag in page.tags %}
-            <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-          {% endfor %}
-          {% else %}
-            {{ page.tags | join: ", " }}
-          {% endif %}
+        <h1>{{ page.title }}</h1>
+        <div class="post-meta">
+            <span class="post-meta-item"><i class="iconfont icon-author"></i><a href="{{ site.url }}" target="_blank" rel="author">{% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %}</a></></span>
+            <time class="post-meta-item" datetime="{{ page.date | date:"%y-%m-%d" }}"><i class="iconfont icon-date"></i>{{ page.date | date_to_string }}</time>
         </div>
-      {% endif %}
-
-      {% if page.social-share %}
-        {% include social-share.html %}
-      {% endif %}
-
-      <ul class="pager blog-pager">
-        {% if page.previous.url %}
-        <li class="previous">
-          <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-        </li>
-        {% endif %}
-        {% if page.next.url %}
-        <li class="next">
-          <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-        </li>
-        {% endif %}
-      </ul>
-
-      {% if page.comments %}
-        <div class="disqus-comments">
-          {% include disqus.html %}
-        </div>
-          {% include fb-comment.html %}
-      {% endif %}
     </div>
-  </div>
+    {% if page.cover %}
+    <div class="filter"></div>
+    <div class="post-cover" style="background: url('{{ page.cover }}') center no-repeat; background-size: cover;">
+    {% endif %}
+</header>
+
+{% include adsense_post_top.html %}
+
+<div class="post-content">
+    {% if page.subtitle %}
+    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
+    {% endif %}
+    <article class="markdown-body">
+        {{ page.content }}
+    </article>
+    <!--
+    {% if site.social-share %}
+    <div class="social-share-wrapper">
+        <div class="social-share"></div>
+    </div>
+    {% endif %}
+  -->
 </div>
+
+{% include adsense_post_bottom.html %}
+
+<section class="author-detail">
+    <section class="post-footer-item author-card">
+        <div class="avatar">
+            <img src="/{{ site.avatar }}" alt="">
+        </div>
+        <div class="author-name" rel="author">{{ site.author }}</div>
+        <div class="bio">
+            <p>{{ site.bio }}</p>
+        </div>
+        {% if site.sns.size > 0 %}
+        <ul class="sns-links">
+            {% for s in site.sns %}
+            <li>
+                <a href="{{ s[1] }}" target="_blank">
+                    <i class="iconfont icon-{{ s[0] }}"></i>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </section>
+    <section class="post-footer-item read-next">
+        {% if page.next.url %}
+        <div class="read-next-item">
+            <a href="{{ page.next.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.next.title }}</span>
+                <p>{{ page.next.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.next.cover %}
+            <div class="filter"></div>
+            <img src="{{ page.next.cover }}" alt="">
+            {% endif %}
+        </div>
+        {% endif %}
+        {% if page.previous.url %}
+        <div class="read-next-item">
+            <a href="{{ page.previous.url }}" class="read-next-link"></a>
+            <section>
+                <span>{{ page.previous.title }}</span>
+                <p>{{ page.previous.excerpt | strip_html | strip_newlines | truncate: 60}}</p>
+            </section>
+            {% if page.previous.cover %}
+            <div class="filter"></div>
+            <img src="{{ page.previous.cover }}" alt="">
+            {% endif %}
+        </div>
+        {% endif %}
+    </section>
+    {% if site.disqus %}
+    <section class="post-footer-item comment">
+        <div id="disqus_thread"></div>
+    </section>
+    {% endif %}
+</section>
+
+{% include footer.html %}
+
+<script src="/assets/js/social-share.min.js"></script>
+<script>
+    socialShare('.social-share', {
+        sites: [{% for i in site.social-share-items %}'{{ i }}'{% if forloop.last == false %},{% endif %}{% endfor %}],
+        wechatQrcodeTitle: "post wechatQrcodeTitle test",
+        wechatQrcodeHelper: '<p>postHelper</p><p>wechatQrcodeHelper</p>'
+    });
+</script>
+
+<script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+/*写入自己的disqus信息*/
+s.src = '{{ site.disqus_url }}';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="/assets/js/prism.js"></script>
+<script src="/assets/js/index.min.js"></script>
+
+{% include disqus.html %}
+
+</body>
+</html>
