@@ -10,7 +10,7 @@ description: Step by step goes a long way.
     <h2>{{ page.home-title }}</h2>
     <h3>{{ page.description }}</h3>
     <img class="header-img" src="/assets/img/title.png" alt="">
-    
+
 </div>
 
 <main class="g-container home-content">
@@ -20,8 +20,13 @@ description: Step by step goes a long way.
                 {% if post.cover %}
                 <div class="post-cover">
                     <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
+                      <section class="author-card">
+                    <div class="avatar">
                     <img src="{{ post.cover }}" alt="">
+                  </div>
+                </section>
                 </div>
+                <!-- <img src="{{ post.cover }}" alt="" width="195px"> -->
                 {% endif %}
                 <section class="post-preview">
                     <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"></a>
@@ -99,6 +104,6 @@ description: Step by step goes a long way.
 
 </main>
 
-{% include adsense_main_bottom.html %}
+<!-- {% include adsense_main_bottom.html %} -->
 
 {% include footer.html %}

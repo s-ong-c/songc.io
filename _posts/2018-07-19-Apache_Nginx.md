@@ -6,6 +6,7 @@ gh-badge: [star, fork, follow]
 category: server
 tags: [server]
 image: /img/nginx.png
+cover: /img/nginx.png
 ---
 
 
@@ -24,7 +25,7 @@ image: /img/nginx.png
 
 
 대표적으로 `Apache` &  `Nginx`
-{: .text-center } 
+{: .text-center }
 
 <br>
 
@@ -67,7 +68,7 @@ image: /img/nginx.png
 해결하기 위해 만든 `Event-driven`구조의 `HTTP`, `Reverser Proxy`,<br>
 `IMAP/POP PROXY server`를 제공하는오픈소스 서버 프로그램
 {: .text-center }
-    
+
 
 <br>
 <br>
@@ -149,10 +150,10 @@ Why? <br>
 
 <br>
 ## Focus
-    중점적으로 봐야 할 부분은 새로운 요청이 들어오면 NGINX의 Worker 
+    중점적으로 봐야 할 부분은 새로운 요청이 들어오면 NGINX의 Worker
     프로세스 내부 listener가 요청을 받아 전달하고
     각 Worker 프로세스는 내부에서 효율적으로 처리한다.
-    Worker 프로세스는 HTTP 요청과 응답을 처리하는 동안 계속해서 
+    Worker 프로세스는 HTTP 요청과 응답을 처리하는 동안 계속해서
     listener를 통해 요청을 받고, 읽고, 쓰기를 반복한다.
     각 커넥션마다 프로세스와 쓰레드는 복제(fork)하지 않는다.
     따라서 부하가 증가하더라도 CPU/메모리 사용량이 크게 증가하지 않는다.
