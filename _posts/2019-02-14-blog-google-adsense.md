@@ -5,7 +5,7 @@ subtitle: 'jekyll 블로그에 광고 적용하기!'
 date: 2019-02-14
 cover: '/images/google/adsense_11.png'
 category: ETC
-tags: [BLOG]
+tags: [BLOG,Google,Adsense]
 comments: true
 sitemap :
   changefreq : daily
@@ -22,15 +22,15 @@ sitemap :
   * Google 이메일  
 
   * 전제 조건: 이미 jekyll 테마 또는 hexo 등등으로 블로그 개설 상태
-    * 가치가 있어야 한다 
+    * 가치가 있어야 한다
     * 많은 포스팅 갯수
     * 중복되지 않는 내용의 글
 
 
-## Google Adsense 적용 하기 
+## Google Adsense 적용 하기
 * Google Adsense 장점
   * 광고 빈도수로 인해서 금전을 확보 가능
-  *  Google Admob, Google Analytics와 묶여 앱 광고 플랫폼 Admob의 정보를 관리할 수 있다 
+  *  Google Admob, Google Analytics와 묶여 앱 광고 플랫폼 Admob의 정보를 관리할 수 있다
   *  Analytics로 유저의 페이지 접속빈도수를 같이 분석할 수 있다.
 
 ### 1. 구글 에드센스 가입
@@ -52,9 +52,9 @@ sitemap :
   ~~~
 
 * [step 2] 승인이 허용되면
-  * 이메일 확인 
+  * 이메일 확인
     ![](/images/google/adsense_3.png)
-  
+
 
 ### 3. 광고 유형 선택하기
 **Google AdSense가 제공하는 광고는 3가지 광고들로 나뉜다.**
@@ -79,7 +79,7 @@ sitemap :
   </script>
   ~~~
 
-  
+
 ### 4.블로그 적용하기
 
 ~~~html
@@ -113,7 +113,7 @@ sitemap :
 { include adsense_post_top.html }
 
 { include adsense_post_bottom.html }
- ~~~
+~~~
 
 #### 성공결과!!
  ![](/images/google/adsense_5.png)
