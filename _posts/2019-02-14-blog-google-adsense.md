@@ -4,6 +4,8 @@ title: 'Google Adsense 블로그 적용!'
 subtitle: 'jekyll 블로그에 광고 적용하기!'
 date: 2019-02-14
 cover: '/images/google/adsense_11.png'
+category: ETC
+tags: [BLOG]
 comments: true
 sitemap :
   changefreq : daily
@@ -14,8 +16,7 @@ sitemap :
 ## GITHUB blog Google adsense 적용
 > - 블로그 광고 삽입
 > - 블로그로 돈벌기
-> - DB 전체 백업하기 
-  - DB 내의 모든 Table과 Table 안의 Data 백업하기 
+
 
 * 들어가기 전
   * Google 이메일  
@@ -34,7 +35,8 @@ sitemap :
 
 ### 1. 구글 에드센스 가입
 * Google adsense 접속
-* ![](/images/google/adsense_1.png)
+
+  ![](/images/google/adsense_1.png)
 
 ### 2. 구글 에드센스 승인
 **제공하는 <script> 태그 삽입**
@@ -47,44 +49,45 @@ sitemap :
         enable_page_level_ads: true
       });
     </script>
-    
   ~~~
 
 * [step 2] 승인이 허용되면
   * 이메일 확인 
-  *  ![](/images/google/adsense_3.png)
+    ![](/images/google/adsense_3.png)
   
 
 ### 3. 광고 유형 선택하기
-**Google AdSense가 제공하는 광고는 3가지 광고들로 나뉜다.
+**Google AdSense가 제공하는 광고는 3가지 광고들로 나뉜다.**
 
  ![](/images/google/adsense_4.png)
 * 텍스트& 이미지 , 인피드 , 콘텐츠내에 자동 삽입
-  
+
 * 선택후 코드생성 및 블로그 소스에 적용
-  *  ![](/images/google/adsense_5.png)
+
+  ![](/images/google/adsense_5.png)
 
   ~~~html
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- PC_Bottom_auto -->
-<!-- head -->
-<ins class="adsbygoogle"
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- PC_Bottom_auto -->
+  <!-- head -->
+  <ins class="adsbygoogle"
      style="display:inline-block;width:970px;height:90px"
      data-ad-client="ca-pub-#######"
      data-ad-slot="######"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
   ~~~
+
+  
 ### 4.블로그 적용하기
 
- ~~~html
+~~~html
 <body>
 
  <input id="nm-switch" type="hidden" value="{{ site.nightMode }}">
 
-{% include header.html %}
+{ include header.html }
 
 <header class="g-banner post-header {{ site.postPatterns | prepend: 'post-pattern-' }} {{ site.theme-color | prepend: 'bgcolor-' }} {% unless page.cover %}post-no-cover{% endunless %}" data-theme="{{ site.theme-color }}">
     <div class="post-wrapper">
@@ -107,52 +110,16 @@ sitemap :
     {% endif %}
 </header>
 
-{% include adsense_post_top.html %}
+{ include adsense_post_top.html }
 
-<div class="post-content">
-    {% if page.subtitle %}
-    <h2 class="post-subtitle">{{ page.subtitle }}</h2>
-    {% endif %}
-    <article class="markdown-body">
-        {{ page.content }}
-    </article>
-    <!--
-    {% if site.social-share %}
-    <div class="social-share-wrapper">
-        <div class="social-share"></div>
-    </div>
-    {% endif %}
-  -->
-</div>
-
-{% include adsense_post_bottom.html %}
-
-<section class="author-detail">
-    <section class="post-footer-item author-card">
-        <div class="avatar">
-            <img src="/{{ site.avatar }}" alt="">
-        </div>
-        <div class="author-name" rel="author">{{ site.author }}</div>
-        <div class="bio">
-            <p>{{ site.bio }}</p>
-        </div>
-        {% if site.sns.size > 0 %}
-        <ul class="sns-links">
-            {% for s in site.sns %}
-            <li>
-                <a href="{{ s[1] }}" target="_blank">
-                    <i class="iconfont icon-{{ s[0] }}"></i>
-                </a>
-            </li>
-            {% endfor %}
-        </ul>
-        {% endif %}
-    </section>
+{ include adsense_post_bottom.html }
  ~~~
 
- #### 성공결과!!
+#### 성공결과!!
  ![](/images/google/adsense_5.png)
+
+
 
 # References
 
-> - [구글에드센스 도움말
+> - [구글에드센스 도움말](https://support.google.com/adsense#topic=33735190)
