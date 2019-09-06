@@ -31,7 +31,6 @@
     "gatsby-source-filesystem": "^2.0.28",
     "gatsby-transformer-remark": "^2.3.8",
     "gatsby-transformer-sharp": "^2.1.17",
-    "gh-pages": "^2.1.1",
     "intersection-observer": "^0.5.1",
     "lodash": "^4.17.11",
     "node-sass": "^4.11.0",
@@ -76,7 +75,6 @@
   "scripts": {
     "post": "node ./cli/create-new-post.js",
     "dev": "gatsby develop",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
     "develop": "gatsby develop",
