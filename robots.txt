@@ -1,7 +1,0 @@
-User-agent: Googlebot
-User-agent: DAUMOA
-User-agent: NaverBot
-User-agent: ZumBot
-Allow: /
-
-Sitemap: http://s-ong-c.github.io/sitemap.xml
