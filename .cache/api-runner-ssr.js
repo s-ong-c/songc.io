@@ -1,29 +1,29 @@
 var plugins = [{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-remark-images/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-remark-images/gatsby-ssr'),
       options: {"plugins":[],"maxWidth":590,"linkImagesToOriginal":false},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-remark-autolink-headers/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-ssr'),
       options: {"plugins":[],"trackingId":""},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"Bee starter","short_name":"Bee starter","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/felog.png"},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-typography/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-feed/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-feed/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-offline/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-offline/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/songminseok/GIT-BLOG/my-blog-starter/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
+      plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-sitemap/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
