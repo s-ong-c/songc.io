@@ -9,7 +9,7 @@ var plugins = [{
       options: {"plugins":[],"trackingId":""},
     },{
       plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"Bee starter","short_name":"Bee starter","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/felog.png"},
+      options: {"plugins":[],"name":"SONGC","short_name":"SONGC","start_url":"/","background_color":"#ffffff","theme_color":"#663399","display":"minimal-ui","icon":"content/assets/felog.png"},
     },{
       plugin: require('/Users/songminseok/s-ong-c.github.io/node_modules/gatsby-plugin-typography/gatsby-ssr'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
