@@ -4,8 +4,6 @@ date: 2019-8-29 16:21:13
 category: 'react'
 ---
 
-# Typescript React Hook 정복하기
-
 ## 1. useState
 
 useState 는 가장 기본적인 Hook 으로서, 함수형 컴포넌트에서도 가변적인 상태를 가질 수 있게 된다.<br> 함수형 컴포넌트에서 상태를 관리해야할때 이 `Hook(useState)` 을 사용
