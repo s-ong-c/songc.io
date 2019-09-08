@@ -1,7 +1,7 @@
 ---
-title: 'React 서버사이드 렌더링 '
+title: '[React] KOA 서버사이드 렌더링 '
 date: 2019-8-31 16:21:13
-category: 'react'
+category: react
 ---
 
 ## SSR(Server Side Rendering)?
@@ -221,17 +221,17 @@ build()
 
 [console]
 
-![ssr cra image](../img/react-ssr/ssr-build.png 'ssr cra image')
+![ssr cra image](./images/react-ssr/ssr-build.png)
 
 [output]
 
-![ssr cra image](../img/react-ssr/dist.png 'ssr cra image')
+![ssr cra image](./images/react-ssr/dist.png)
 
 3. server 실행
    `node ./dist/server.js`
 
 서버사이드 연동 완료!!!
-![ssr cra image](../img/react-ssr/rendering.png 'ssr cra image')
+![ssr cra image](./images/react-ssr/rendering.png)
 
 - next 쓰면 간단하다고 들었는데 아직 안써보았다.
 - webpack module은 뭐가 들어있는지는 참고 할 필요가 있는듯 싶다

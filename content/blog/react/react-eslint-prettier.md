@@ -1,5 +1,5 @@
 ---
-title: 'Eslint & Prettier 적용하기'
+title: '[React] Eslint & Prettier 적용하기'
 date: 2019-8-20 16:21:13
 category: 'react'
 ---
