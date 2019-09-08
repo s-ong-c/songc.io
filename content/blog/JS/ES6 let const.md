@@ -1,5 +1,5 @@
 ---
-title: 'ES6-let const'
+title: '[JS] ES6-let const'
 date: 2018-7-10 16:21:13
 category: 'JS'
 ---
