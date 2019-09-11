@@ -11,7 +11,7 @@ category: 'JS'
 
 ### A. 자바스크립트의 데이터 타입도
 
-![Smithsonian Image](http://cfile3.uf.tistory.com/image/231BA04D54C99DBD10DD88)
+![Smithsonian Image](./images/js-types.png)
 
 ### B. 자바스크립트 기본 타입(숫자, 문자열, 불린값, null, undefined)
 
