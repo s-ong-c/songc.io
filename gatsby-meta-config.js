@@ -2,7 +2,8 @@ module.exports = {
   title: `SONGC`,
   description: `Blog posted about ...`,
   author: `songc`,
-  introduction: `I explain with words and code. I explain with words and code. I explain with words and code.`,
+  introduction: `프론트엔드 개발 API 개발 설계.테스트.클린코드. 항상 무언가에 관심이 많음. 
+  `,
   siteUrl: `https://s-ong-c.github.io`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
