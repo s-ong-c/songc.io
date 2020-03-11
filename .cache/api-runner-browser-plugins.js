@@ -9,7 +9,7 @@ module.exports = [{
       options: {"plugins":[]},
     },{
       plugin: require('/Users/songminseok/blog/s-ong-c.github.io/node_modules/gatsby-plugin-google-analytics/gatsby-browser.js'),
-      options: {"plugins":[],"trackingId":""},
+      options: {"plugins":[],"trackingId":"UA-134332040-1"},
     },{
       plugin: require('/Users/songminseok/blog/s-ong-c.github.io/node_modules/gatsby-plugin-typography/gatsby-browser.js'),
       options: {"plugins":[],"pathToConfigModule":"src/utils/typography"},
