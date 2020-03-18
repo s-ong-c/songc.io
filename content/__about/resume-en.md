@@ -132,25 +132,6 @@ Summarizes the whole development.
   - Postgres
   - Aws - Serverless -lambda
 
-# 🍭 Activities
-
-## ⛑ Communities
-
-|             |                                                                                                           |
-| ----------: | --------------------------------------------------------------------------------------------------------- |
-|      period | 18.06. ~ current.                                                                                         |
-| description | One of FEConf's organizers is the front-end conference hosted by Facebook's 'Frontend Development Group'. |
-
-# 🎓 Education
-
-## NHN NEXT
-
-|            |                    |
-| ---------: | ------------------ |
-|     period | 16.03 ~ 17.09      |
-|  **major** | Web UI programming |
-| **status** | completion         |
-
 <div align="center" class="final">
 
 _Thank you for reading my resume._
