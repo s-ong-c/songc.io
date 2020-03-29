@@ -51,7 +51,7 @@ You can fix meta data of blog in `/gatsby-meta-config.js` file.
 
 ## 5. Publish with [netlify](https://netlify.com)
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JaeYeopHab/gatsby-starter-bee)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/FFM-TEAM/gatsby-starter-song)
 
 :bulb: if you want to deploy github pages, add following script to package.json
 
@@ -212,4 +212,4 @@ You can add comments feature by selecting one of them.
 5. Offline caching with service worker (based gatsby)
 6. Support GA(Google Analytics)
 
-> Let's Start! [Go](https://github.com/JaeYeopHan/gatsby-starter-bee)
+> Let's Start! [Go](https://github.com/FFM-TEAM/gatsby-starter-song)
