@@ -28,7 +28,7 @@ TypeOrm 이란 TypeScript 와 JavaScript(ES5 , ES6 , ES7) 용 ORM이다. MySQL, 
 
 ![img](./images/typeorm/typeorm-2.png)
 
-Typeorm은 Typescript 환경에서 이미 npm trend 충분히 많은 사용자가 있다.
+Typeorm은 Typescript 환경에서 이미 npm trend 충분히 많은 사용자가 있습니다
 
 ### 👨🏻‍💻Environment
 
@@ -67,8 +67,8 @@ src
 
 ### TypeOrm 설정
 
-Database config 설정법은 두가지 방법이 있다.
-1 or 2 둘중 아무거나 사용해도 무방하다.
+Database config 설정법은 두가지 방법이 있습니다.
+1 or 2 둘중 아무거나 사용해도 무방합니다.
 
 `1. .env (env 파일 생성)`
 
@@ -88,7 +88,7 @@ TYPEORM_ENTITIES=src/entity/**/*.ts
 `2. ormconfig.json`
 
 먼저 \$ npm install -g typescript typeorm 설치 후
-cli 명령어으로 생성을 할 수 있다.
+cli 명령어으로 생성을 할 수 있습니다.
 
 ```
 $ typeorm init --name 프로젝트이름 --database 데이터베이스
@@ -113,10 +113,10 @@ $ typeorm init --name 프로젝트이름 --database 데이터베이스
 
 [Active Record vs Data Mapper](https://github.com/typeorm/typeorm/blob/master/docs/active-record-data-mapper.md)
 
-TypeORM을 사용하여 개발을 하면 Data Mapper 패턴과 Active Record 패턴을 둘다 사용이 가능하다.
+TypeORM을 사용하여 개발을 하면 Data Mapper 패턴과 Active Record 패턴을 둘다 사용이 가능합니다.
 
 1. Active Record
-   > Active Record패턴은 모델 자체 내에서 모든 쿼리 메서드를 정의하고 모델의 메서드를 통해 데이터를 조회, 삽입, 삭제등을 할 수 있습니다. 따라서, SQL을 사용하지 않고도 모델 내에서 데이터를 조작하는 다양한 메서드를 제공
+   > Active Record패턴은 모델 자체 내에서 모든 쿼리 메서드를 정의하고 모델의 메서드를 통해 데이터를 조회, 삽입, 삭제등을 할 수 있습니다. 따라서, SQL을 사용하지 않고도 모델 내에서 데이터를 조작하는 다양한 메서드를 제공합니다.
 
 ```ts
 import { BaseEntity, Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
