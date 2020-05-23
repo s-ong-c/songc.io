@@ -13,4 +13,28 @@ body {
     font-weight: 500;
     border-bottom: 17px solid #ffd816;
   }
+  h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    letter-spacing: -1px;
+    border-bottom: transparent !important;
+  }
+  h3 {
+    font-size: 1.25em;
+    letter-spacing: -1px;
+  }
+
+  td:first-child {
+    text-align: right !important;
+    font-weight: bolder !important;
+  }
+
+  th {
+    padding: 0 !important;
+  }
+
+  code {
+    font-weight: 500 !important;
+  }
 }
