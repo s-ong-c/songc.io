@@ -22,11 +22,11 @@ Scaffolding 도구인 Create-React-App Tool을 사용하거나, 처음부터 Web
 
 ### CRA?
 
-> facebook에서 만든 웹 개발용 boilerplate 쉽게 Getting Started 하기 쉽게 도와주는 템플릿
+facebook에서 만든 웹 개발용 boilerplate 쉽게 Getting Started 하기 쉽게 도와주는 템플릿입니다.
 
-모든 webpack plugin과 loader를 설정해주며 lint rule도 잡아준다. TypeScript까지 정식으로 지원하니 굳이 따로 boilerplate을 만들 필요가 없을수도 있습니다. <br/>
+모든 webpack plugin과 loader를 설정해주며 기본적인 lint rule도 잡아주고, 또 TypeScript까지 정식으로 지원하니 굳이 따로 boilerplate을 만들 필요가 없을수도 있습니다. <br/>
 
-> 결론적으로 필요한 modules 과 설정 이 없으면 또 추가 해야 한다. 매번 하기가 귀찮다는 점이다.
+> 결론적으로 필요한 자주 쓰는 modules 와 그 외 설정들을 직접해줘야 합나다. 또 매번 하기가 귀찮다는 점을 해소 하기 위해서 Custom CRA 를 만들어 보겠습니다.
 
 ### Template Make
 
@@ -41,9 +41,10 @@ Environment
 
 #### 🤷🏻‍♂️craco는 무엇인가요?
 
-Create-React-App
-추가적으로 Create React App Configuration Override 설정을 하는 eject가 있다.<br/>
-하지만 제공해주는 eject에서도 결국 설정을 수정해야 하는 경우가 생긴다.
+쉽게 말하자면 Create React App Configuration Override 을 해주는 도구라고 생각하시면 좋을거 같습니다.
+
+기본 CRA에서 Create React App Configuration Override 설정을 하는 eject가 있습니다.<br/>
+하지만 제공해주는 eject에서도 결국 설정을 수정해야 하는 경우가 생깁니다.
 그래서 특정 Override Config를 해주는 특정도구는 Eject보다 `Craco`라는 도구를 선택하였습니다.
 
 **ROLE**
@@ -53,6 +54,8 @@ Create-React-App
 
 **[babel plugin을 추가하거나 Webpack plugin 추가 예시]** <br/>
 기본사용법은 아래와 같습니다.
+
+이번 Template 프로젝트에서는 아래와 같이 설정은 하지 않았지만 아래와 같은 여러 [craco plugin](https://github.com/gsoft-inc/craco/tree/master/recipes)을 제공합니다
 
 ```js
 module.exports = () => {
@@ -223,6 +226,8 @@ create-react-app [나의 템플릿 이름]
 
 이렇게 사용한다면 좀더 편리하게 기본 설정을 할수 있지 않을까 생각이 듭니다.
 이미 이렇게 사용하고 계시거나 보통 많이 boilerplate을 만들어서 사용할거라고 생각합니다.
+
+추가적으로 Styles 관련, lib 파일 같은 경우에도 추가해서 사용하면 편리 할 것입니다.
 
 ## References
 
