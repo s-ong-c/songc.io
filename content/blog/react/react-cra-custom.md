@@ -227,16 +227,14 @@ create-react-app [나의 템플릿 이름]
 이렇게 사용한다면 좀더 편리하게 기본 설정을 할수 있지 않을까 생각이 듭니다.
 이미 이렇게 사용하고 계시거나 보통 많이 boilerplate을 만들어서 사용할거라고 생각합니다.
 
-추가적으로 Styles 관련, lib 파일 같은 경우에도 추가해서 사용하면 편리 할 것입니다.
-
 ## References
 
 > - [https://www.npmjs.com/package/cra-template-songc](https://www.npmjs.com/package/cra-template-songc)
 > - [https://github.com/s-ong-c/cra-template-songc#readme](https://github.com/s-ong-c/cra-template-songc#readme)
-> - [https://github.com/facebook/create-react-app](https://github.com/facebook/create-react-app)
+> - [create-react-app](https://github.com/facebook/create-react-app)
 > - [https://jbee.io/react/react-1-development-environment-setup/](https://jbee.io/react/react-1-development-environment-setup/)
 > - [craco](https://github.com/gsoft-inc/craco)
-> - [https://github.com/semantic-release/semantic-release])https://github.com/semantic-release/semantic-release
+> - [semantic-release](https://github.com/semantic-release/semantic-release)
 > - [https://github.com/features/actions](https://github.com/features/actions)
 
 ### 🙏🏻감사합니다.
