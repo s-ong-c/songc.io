@@ -2,8 +2,14 @@
 @import '../styles/light-theme.scss';
 @import '../styles/dark-theme.scss';
 @import url('https://fonts.googleapis.com/css?family=Gugi');
+@import url('https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css');
 body {
-  font-family: 'Noto Sans KR', sans-serif;
+  // font-family: 'NanumSquareRound', sans-serif;
+  font-family: 'NanumSquareRound', Helvetica, Arial, sans-serif;
+  // font-family: NanumSquareRound, BlinkMacSystemFont, 'Helvetica Neue',
+  //   'Apple SD Gothic Neo', 'Malgun Gothic', '맑은 고딕', 나눔고딕,
+  //   'Nanum Gothic', 'Noto Sans KR', 'Noto Sans CJK KR', arial, 돋움, Dotum,
+  //   Tahoma, Geneva, sans-serif;
   background-color: $light-background-color;
   -webkit-text-size-adjust: antialiased;
   -moz-osx-font-smoothing: grayscale;
