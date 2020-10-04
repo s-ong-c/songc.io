@@ -114,9 +114,9 @@ gatsby로 프로젝트를 생성하게 되면 `gatsby-*`라고 config 파일들�
 
 ### References
 
-- Velog (https://velog.io)
-- gatsby-starter-song (https://github.com/FFM-team/gatsby-starter-song)
-- gatsby-starter-blog (https://github.com/gatsbyjs/gatsby-starter-blog)
-- overreact.io (https://overreacted.io)
-- Medium (https://medium.com/)
-- https://www.gatsbyjs.org/starters/ (https://www.gatsbyjs.org/starters/)
+- [Velog](https://velog.io)
+- [gatsby-starter-song](https://github.com/FFM-team/gatsby-starter-song)
+- [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog)
+- [overreact.io](https://overreacted.io)
+- [Medium](https://medium.com/)
+- [https://www.gatsbyjs.org/starters/](https://www.gatsbyjs.org/starters/)
