@@ -1,5 +1,5 @@
 ---
-title: '[DS] Desgin System 무작정 만들어보기 01'
+title: '[DS] Monorepo 환경에서 디자인시스템 구축 I'
 date: 2020-12-03 13:09:88
 category: react
 ---
