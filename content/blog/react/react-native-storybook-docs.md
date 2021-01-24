@@ -8,7 +8,7 @@ category: 'react'
 
 > RN 환경에서 Storybook을 어떻게 사용하시나요?
 
-이포스트에서는 React-Native 환경에서 Component UI를 @storybook/addons-docs 을 사용하는 Tutorial Guide작성 글입니다.
+이 포스트에서는 React-Native 환경에서 Component UI를 @storybook/addons-docs 을 사용하는 Tutorial Guide작성 글입니다.
 
 ### 🤷🏻‍♂️WHY? MDX
 
