@@ -1,12 +1,23 @@
 ---
-title: '[FE] Openapi-generator 사용하기'
-date: 2021-02-05 10:02:75
+title: '프론트엔드에서 OpenAPI Generator 사용하기'
+date: 2021-02-06 12:02:75
 category: react
 ---
 
 ![img](./images/openapi/openapi-generator.jpg)
 
 이 글에서는 `Openapi-generator` 을 사용해서 Client API 타입에 관한 내용을 정리하는 글입니다. 하지만 서버 환경설정에 대한 튜토리얼은 아니기 때문에 필요한 모든 내용을 다루지는 않습니다.
+
+> 서버 API 가 RestAPI 로 되어 있을때
+> 프론트개발자 여러분은 API 타입은 어떻게 정의 하나요?
+
+RestAPI 스펙을 참고 하여 프론트에서 API 타입을 정의하는 것을 Openapi-generator 통해서 자동으로 생성하고자 튜토리얼을 작성하게 되었습니다.
+
+## Preview
+
+- [x] API Spec 파일로 자동 API interface 를 만들어준다면?
+- [x] 스크립트 명령어하나면?
+- [x] Axios, Fetch 파일을 작성할 필요가 없다면?
 
 ## 목차
 
@@ -18,9 +29,6 @@ category: react
   - [⚠️ 주의사항]
 
 ## Openapi-generator?
-
-> 서버 API 가 RestAPI 로 되어 있을때
-> 프론트개발자 여러분은 API 타입은 어떻게 정의 하나요?
 
 OAS(Open API Specification)란?
 
@@ -150,13 +158,14 @@ API가 OAS(yaml, json) 되어 있어야 합니다.
 
 ## 마무리
 
-전에는 실무에서 graphQL 환경이여서 API 타입을 작성해야 하는 번거로움이 없었지만 Rest API 를 만나서 API 타입 명세를 직접 작성해야 하는 경우가 생겨서 generator를 찾아보다가 작년 FEConfig에서 OpenAPI Specification으로 타입-세이프하게 API 개발하기: 희망 편 VS 절망 편](https://www.youtube.com/watch?v=J4JHLESAiFk) 참고해서 튜토리얼을 작성하게 되었습니다. 저와 같은 환경에서 조금이라도 도움이 되길 바랍니다.
+전에는 실무에서 graphQL 환경이여서 API 타입을 작성해야 하는 번거로움이 없지만 Rest API 를 만나서 API 타입 명세를 직접 작성해야 하는 경우가 생겨서 generator를 찾아보다가 작년 [FEConfig에서 OpenAPI Specification으로 타입-세이프하게 API 개발하기: 희망 편 VS 절망 편](https://www.youtube.com/watch?v=J4JHLESAiFk) 참고해서 튜토리얼을 작성하게 되었습니다. 저와 같은 환경에서 조금이라도 도움이 되길 바랍니다.
 
 ## Reference
 
 - [OpenAPI Specification으로 타입-세이프하게 API 개발하기: 희망편 VS 절망편](https://www.youtube.com/watch?v=J4JHLESAiFk)
 - [https://github.com/OpenAPITools/openapi-generator](https://github.com/OpenAPITools/openapi-generator)
 - [hub.docker](https://hub.docker.com/r/openapitools/openapi-generator)
+- [https://openapi-generator.tech/](https://openapi-generator.tech/)
 
 ## 감사합니다.
 
