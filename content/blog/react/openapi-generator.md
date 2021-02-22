@@ -30,14 +30,14 @@ RestAPI 스펙을 참고 하여 프론트에서 API 타입을 정의하는 것�
 
 ## Openapi-generator?
 
+Openapi-generator이란 무었일까요? `OpenAPI Specification`에 맞게 코드를 generate 를 해주는 라이브러리라고 생각하시면 좋을거 같습니다.
+
 OAS(Open API Specification)란?
 
 - 예전 Swagger Specification
 - RESTAPI를규칙에 맞게 API Spec => json과 yaml
 
 <span style="background-color: #f8baba">OAS가 프론트엔드랑 무슨 관계가 있고 왜 알아야 할까요? .</span>
-
-Openapi-generator이란 무었일까요? `OpenAPI Specification`에 맞게 코드를 generate 를 해주는 라이브러리라고 생각하시면 좋을거 같습니다.
 
 ```tsx
 export const localEmailRegister = ({
@@ -79,11 +79,11 @@ export type AuthResponse = {
 
 이러한 API 호출 및 타입 파일을 작성을 직접하지 않아도 됩니다.
 
-## HOW
+## 사용하기
 
 직접 generator-openapi 를 통해서 client code를 generator를 하도록 하겠습니다.
 
-### Install
+### How
 
 openapi-generator 를 사용하려면 openapi-generator cli 설치를 해야 합니다.
 방법은 대표적으로 설치는 `homebrew`, `NPM` ,`docker`를 사용하면 됩니다.
