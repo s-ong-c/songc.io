@@ -6,7 +6,7 @@ category: 'react'
 
 ## 1. useState
 
-useState 는 가장 기본적인 Hook 으로서, 함수형 컴포넌트에서도 가변적인 상태를 가질 수 있게 된다.<br> 함수형 컴포넌트에서 상태를 관리해야할때 이 `Hook(useState)` 을 사용
+useState 는 가장 기본적인 Hook 으로서, 함수형 컴포넌트에서도 가변적인 상태를 가질 수 있게 됩니다.<br> 함수형 컴포넌트에서 상태를 관리해야할때 이 `Hook(useState)` 을 사용합니다.
 
 ```js
 import * as React from 'react'
@@ -32,7 +32,7 @@ export default Counter
 
 ### 1-1 다중 useState 사용법
 
-여러개면 여러개 선언해서 사용하면 된다.
+여러개면 여러개 선언해서 사용하면 됩니다.
 
 ```js
 import * as React from 'react'
