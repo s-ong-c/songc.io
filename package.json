@@ -8,7 +8,7 @@
     "url": "https://github.com/s-ong-c/songc.io/issues"
   },
   "dependencies": {
-    "gatsby": "^4.2.8",
+    "gatsby": "^4.2.0",
     "gatsby-image": "^3.11.0",
     "gatsby-plugin-feed": "^4.2.0",
     "gatsby-plugin-google-analytics": "^4.2.0",
@@ -52,7 +52,7 @@
     "typography-theme-github": "^0.16.18"
   },
   "devDependencies": {
-    "date-fns": "^2.26.1",
+    "date-fns": "^2.26.0",
     "eslint": "^8.3.0",
     "eslint-plugin-react": "^7.27.1",
     "fs-extra": "^10.0.0",
