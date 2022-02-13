@@ -12,7 +12,16 @@ module.exports = {
     facebook: ``, // Your Facebook account
   },
   icon: `content/assets/felog.png`, // Add your favicon
-  keywords: [`blog`],
+  thumbnail: `https://images.songc.io/songc.png`,
+  keywords: [
+    `blog`,
+    `javascript`,
+    `typescript`,
+    `web`,
+    `react`,
+    `frontend`,
+    `development`
+  ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 's-ong-c/songc.io', // Your repository for archive comment
