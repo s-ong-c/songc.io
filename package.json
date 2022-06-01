@@ -42,7 +42,7 @@
     "react-helmet": "^5.2.0",
     "react-switch": "^5.0.0",
     "react-typography": "^0.16.13",
-    "sharp": "^0.29.3",
+    "sharp": "^0.30.5",
     "smooth-scroll": "^16.0.0",
     "typeface-catamaran": "0.0.54",
     "typeface-merriweather": "0.0.72",
